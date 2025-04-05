@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobstacle Course Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="title">Jobstacle Course Application</div>
+    </div>
+</div>
+<div class="bottom_container">
+    <div class="form-container">
+        <form>
+            <div class="names-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <select id="name">
+                        <option>Select a Name</option>
+                        <option>John</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last name</label>
+                    <select id="last_name">
+                        <option>Select a last name</option>
+                    </select>
+                </div>
+            </div>
+            <div class="dob-row">
+                <div class="radio-group">
+                    <label for="born-check">
+                        <span>I was born *</span>
+                        <input type="radio" id="born-check" name="born">
+                    </label>
+                </div>
+                <div class="form-group dob-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="text" id="dob" placeholder="- / - / -">
+                    <button type="button" id="random-dob">Random Birthdate</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
