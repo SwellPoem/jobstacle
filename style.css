@@ -66,7 +66,7 @@ body {
 }
 
 label {
-    width: 100%;
+    width: 40%;
     font-size: 14px;
     color: #666;
     font-weight: bold;
@@ -111,10 +111,19 @@ label {
 }
 
 .dob-group {
-    width: auto;
-    display: flex;
+    display: none;
     align-items: center;
-    gap: 10%;
+    gap: 10px;
+}
+
+.dob-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.dob-inputs input {
+    width: 40%;
+    text-align: left;
 }
 
 select, input {
