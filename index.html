@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="./script/jsonloader.js" defer></script>
     <script src="script/musicplayer.js" defer></script>
+    <script src="script/random_date.js" defer></script>
+    <script src="script/born_check.js" defer></script>
 </head>
 <body>
 <div class="container">
@@ -36,12 +38,25 @@
                 <div class="radio-group">
                     <label for="born-check">
                         <span>I was born *</span>
-                        <input type="radio" id="born-check" name="born">
+                        <input type="checkbox" id="born-check" name="born">
                     </label>
                 </div>
                 <div class="form-group dob-group">
-                    <label for="dob">Date of Birth</label>
-                    <input type="text" id="dob" placeholder="- / - / -">
+                    <label for="dob-inputs">Date of Birth</label>
+                    <div class="dob-inputs" id="dob-inputs">
+                        <div>
+                            <label for="dob-year">Year</label>
+                            <input type="text" id="dob-year" placeholder="YYYY" readonly>
+                        </div>
+                        <div>
+                            <label for="dob-day">Day</label>
+                            <input type="text" id="dob-day" placeholder="DD" readonly>
+                        </div>
+                        <div>
+                            <label for="dob-month">Month</label>
+                            <input type="text" id="dob-month" placeholder="MM" readonly>
+                        </div>
+                    </div>
                     <button type="button" id="random-dob">Random Birthdate</button>
                 </div>
             </div>
