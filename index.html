@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobstacle Course Application</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script/jsonloader.js" defer></script>
+    <script src="script/musicplayer.js" defer></script>
     <script src="script/random_date.js" defer></script>
     <script src="script/born_check.js" defer></script>
 </head>
@@ -12,6 +14,7 @@
 <div class="container">
     <div class="header">
         <div class="title">Jobstacle Course Application</div>
+        <button class="music-button" id="music-button">Mute?</button>
     </div>
 </div>
 <div class="bottom_container">
@@ -22,7 +25,6 @@
                     <label for="name">Name</label>
                     <select id="name">
                         <option>Select a Name</option>
-                        <option>John</option>
                     </select>
                 </div>
                 <div class="form-group">
