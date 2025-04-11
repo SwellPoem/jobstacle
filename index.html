@@ -9,7 +9,8 @@
     <script src="script/musicplayer.js" defer></script>
     <script src="script/random_date.js" defer></script>
     <script src="script/born_check.js" defer></script>
-    <script src="script/random-fact-alert.js" defer></script>
+    <script src="script/number_restriction.js" defer></script>
+<!--    <script src="script/random-fact-alert.js" defer></script>-->
 </head>
 <body>
 <div class="container">
@@ -61,9 +62,44 @@
                     <button type="button" id="random-dob">Random Birthdate</button>
                 </div>
             </div>
+            <div class="form-group where-born">
+                <label for="where-born-inputs">Geographic Origin Identifier</label>
+                <div class="where-born-inputs" id="where-born-inputs">
+                    <div class="latitude" id="latitude">
+                        <label for="born-location-latitude">N</label>
+                        <input type="text" id="born-location-latitude" placeholder="latitude">
+                    </div>
+                    <div class="longitude" id="longitude">
+                        <label for="born-location-longitude">E</label>
+                        <input type="text" id="born-location-longitude" placeholder="longitude">
+                    </div>
+
+                </div>
+<!--                <button type="button" id="find-location">Find</button>-->
+            </div>
+            <div class="form-group phone-group">
+                <label for="phone-number">Phone Number</label>
+                <select id="phone-prefix">
+                    <option value="">+ </option>
+                </select>
+                <input type="text" id="phone-number" placeholder="Enter number">
+                <small id="phone-number-hint" style="color: #666; font-size: 12px;">
+                    Enter only the digits in even positions of your phone number
+                </small>
+            </div>
+            <div class="form-group email-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <input type="checkbox" id="agree-check" name="agree">
+                <small id="agree-hint" style="color: #666; font-size: 12px;">
+                    I accept the terms
+                </small>
+
+            </div>
         </form>
     </div>
 </div>
+
 <div class="random-facts-alert-container" id="random-facts-alert">
     <div class="alert-content">
         <span class="closebtn" id="closebtn">&times;</span>
@@ -71,5 +107,6 @@
         <b><p id="person"></p></b>
     </div>
 </div>
+
 </body>
 </html>

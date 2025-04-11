@@ -28,3 +28,21 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error fetching names:', error));
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('./json/prefixes.json')
+        .then(response => response.json())
+        .then(data => {
+            const nameSelect = document.getElementById('phone-prefix');
+            data.forEach(name => {
+                const option = document.createElement('option');
+                option.value = name;
+                option.textContent = name;
+                nameSelect.appendChild(option);
+            });
+        })
+        .catch(error => console.error('Error fetching names:', error));
+});
+
+
+
