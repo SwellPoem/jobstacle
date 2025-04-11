@@ -67,7 +67,7 @@
                 <div class="where-born-inputs" id="where-born-inputs">
                     <div class="latitude" id="latitude">
                         <label for="born-location-latitude">N</label>
-                        <input type="text" id="born-location-latitude" placeholder="latitude">
+                        <input type="text" id="born-location-latitude           " placeholder="latitude">
                     </div>
                     <div class="longitude" id="longitude">
                         <label for="born-location-longitude">E</label>
@@ -90,11 +90,20 @@
             <div class="form-group email-group">
                 <label for="email">Email</label>
                 <input type="text" id="email" placeholder="Enter email">
-                <input type="checkbox" id="agree-check" name="agree">
-                <small id="agree-hint" style="color: #666; font-size: 12px;">
-                    I accept the terms
-                </small>
-
+                <div class="accept-fields-group">
+                    <div class="accept-field">
+                        <input type="checkbox" id="agree-check" name="agree">
+                        <small id="agree-hint">
+                            I accept the terms, and a side of fries.
+                        </small>
+                    </div>
+                    <div class="accept-field">
+                        <input type="checkbox" id="disagree-check" name="agree">
+                        <small id="disagree-hint">
+                            I kinda wish not to accept the terms. I accept to not receive promotional emails about lawyers, lawnmowers, and lawful evil dungeons.
+                        </small>
+                    </div>
+                </div>
             </div>
         </form>
     </div>
